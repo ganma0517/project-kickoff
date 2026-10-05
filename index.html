@@ -34,7 +34,41 @@
 用途：保存獲准文獻、引用資料與參考索引。
 類型：.pdf、.md、.bib。
 記錄出處、日期及使用限制。
-目前未匯入參考資料。</pre></details></div></section><section class="page" data-page="5" hidden aria-labelledby="heading-5"><p class="eyebrow">第 05 步 / 資料品質</p><h1 id="heading-5" tabindex="-1">資料品質：避免把錯誤帶到下一步</h1><p class="lead">有固定位置仍可能算錯。資料品質要在產圖前檢查，避免把错误結果帶進對話、圖表與報告。</p><div class="case-strip">本月收到五列資料：有一個重複 ID，還有一筆報名數填成「三十」。先核對來源，再處理。</div><div class="table-wrap"><table><thead><tr><th>活動 ID</th><th>活動</th><th>報名數</th></tr></thead><tbody><tr><td>A01</td><td>讀書會</td><td>24</td></tr><tr><td>A02</td><td>程式工作坊</td><td>36</td></tr><tr><td>A02</td><td>程式工作坊</td><td>36</td></tr><tr><td>A03</td><td>社區導覽</td><td>18</td></tr><tr><td>A04</td><td>志工培訓</td><td>三十</td></tr></tbody></table></div><div class="card"><h2>先檢查，再決定</h2><div class="tabs"><button id="check-quality">1 檢查資料</button><button id="fix-quality" disabled>2 套用已確認的示範修正</button></div><p id="quality-result" role="status">尚未檢查。不要直接加總或自行猜測來源。</p><p class="note">本例預先設定來源確認：重複列是重送，A04 為 30。按鈕只改教學畫面，不會修改你的檔案。</p></div><div class="grid2"><div class="card"><h2>至少檢查四件事</h2><p>欄位是否齊全？資料型態是否一致？ID 是否重複？缺值、單位及日期定義是否清楚？</p></div><div class="card"><h2>留下修正證據</h2><p>保留原始檔。將確認的修正存成工作檔，記錄規則及檢查結果。這讓下一次不用重查同一個問題。</p></div></div></section><section class="page" data-page="6" hidden aria-labelledby="heading-6"><p class="eyebrow">第 06 步 / 歸檔與索引</p><h1 id="heading-6" tabindex="-1">歸檔：保存證據，縮小當前入口</h1><p class="lead">品質通過後，讓成果有可追溯的位置。歸檔是把來源、版本、產出與證據連起來。</p><div class="card"><h2>同一個月報，三種處理方式</h2><div class="tabs"><button data-archive="loose" aria-pressed="true">散落檔案</button><button data-archive="trace" aria-pressed="false">建立索引</button><button data-archive="history" aria-pressed="false">保留歷史</button></div><pre class="code-panel" id="archive-text"></pre><p id="archive-result" role="status"></p></div><div class="grid2"><div class="card"><h2>命名讓版本可辨識</h2><p>例如 activities_2026-10.csv、monthly_report_2026-10.svg。命名要固定，並記錄哪份是目前使用版本。</p></div><div class="card"><h2>清理讓入口保持可用</h2><p>暫存放 _scratch/。驗證證據另存正式位置。舊成果移到歸檔位置並更新索引，再依規則清理暫存。</p></div></div><div class="key">歸檔不代表每次讀完整歷史。索引指出目前版本，必要時才回查歷史。歸檔也不等於備份。</div><div class="card"><h2>說明檔（規則建立）</h2><p class="note">示範內容：這些檔案把約定留下來，讓下一輪可以查閱。點開看用途，不必背檔名。</p><details><summary>out/README.md</summary><pre class="code-panel"># 成果與證據
+目前未匯入參考資料。</pre></details></div></section><section class="page" data-page="5" hidden aria-labelledby="heading-5"><p class="eyebrow">第 05 步 / 資料品質</p><h1 id="heading-5" tabindex="-1">資料品質：避免把錯誤帶到下一步</h1><p class="lead">有固定位置仍可能算錯。資料品質要在產圖前檢查，避免把错误結果帶進對話、圖表與報告。</p><div class="case-strip">本月收到五列資料：有一個重複 ID，還有一筆報名數填成「三十」。先核對來源，再處理。</div><div class="table-wrap"><table><thead><tr><th>活動 ID</th><th>活動</th><th>報名數</th></tr></thead><tbody><tr><td>A01</td><td>讀書會</td><td>24</td></tr><tr><td>A02</td><td>程式工作坊</td><td>36</td></tr><tr><td>A02</td><td>程式工作坊</td><td>36</td></tr><tr><td>A03</td><td>社區導覽</td><td>18</td></tr><tr><td>A04</td><td>志工培訓</td><td>三十</td></tr></tbody></table></div><div class="card"><h2>先檢查，再決定</h2><div class="tabs"><button id="check-quality">1 檢查資料</button><button id="fix-quality" disabled>2 套用已確認的示範修正</button></div><p id="quality-result" role="status">尚未檢查。不要直接加總或自行猜測來源。</p><p class="note">本例預先設定來源確認：重複列是重送，A04 為 30。按鈕只改教學畫面，不會修改你的檔案。</p></div><div class="grid2"><div class="card"><h2>至少檢查四件事</h2><p>欄位是否齊全？資料型態是否一致？ID 是否重複？缺值、單位及日期定義是否清楚？</p></div><div class="card"><h2>留下修正證據</h2><p>保留原始檔。將確認的修正存成工作檔，記錄規則及檢查結果。這讓下一次不用重查同一個問題。</p></div></div><div class="card"><h2>規則說明檔 · DATA_RULES.md</h2><p>先把「如何檢查、什麼情況才能修正、證據存哪裡」寫下來。下次換資料或換人接手，都有依據。</p><details><summary>展開本例的資料整理規則</summary><pre class="code-panel"># 活動月報資料規則（教學示例）
+
+## 來源與用途
+
+資料是本頁五列模擬活動資料，不是真實活動紀錄。
+來源原檔保留；工作資料另存，實際專案路徑依授權確認。
+
+## 檢查條件
+
+- 活動 ID 不得空白。是否必須唯一，要依資料用途確認。
+- 本例每個活動應有一列；重複 ID 先查原因，不直接刪除。
+- 報名數應為非負整數；文字或異常值先核對來源，不猜值。
+- 核對必要欄位、缺值、單位與日期定義；未執行的檢查不標通過。
+
+## 本例已確認的修正
+
+1. A02 重複列是重送：保留一列，移除工作資料中的重送列。
+2. A04「三十」經示例來源確認為 30：只在工作資料轉為數值。
+3. 核對四個唯一活動，報名次數合計 108。不是去重人數。
+
+以上依據由教材預先設定。真實資料必須重新核對，不能為得到 108 而改資料。
+網頁按鈕只改示範畫面，不會修改電腦上的檔案。
+
+## 修正與檢查證據
+
+記錄來源版本、問題、確認依據、實際動作、受影響筆數、輸出位置及檢查結果。
+保存重跑方法；個資與敏感內容不得寫入公開日誌。
+修正後重跑檢查，仍失敗就記下阻礙，不標為完成。
+
+## 更新與接續
+
+更新 README 的資料與成果索引，PROGRESS 記錄驗證、待辦及下一步。
+下一批資料到來，先確認欄位及規則是否改變，再重新檢查。
+建立規則檔不等於完成資料驗證、歸檔或備份。
+</pre></details><button type="button" id="download-data-rules">下載規則說明檔</button><p class="note">本例已確認的修正僅適用教學資料。實際專案由 Skill 逐題確認，使用 DATA_RULES 範本建立自己的規則。</p></div></section><section class="page" data-page="6" hidden aria-labelledby="heading-6"><p class="eyebrow">第 06 步 / 歸檔與索引</p><h1 id="heading-6" tabindex="-1">歸檔：保存證據，縮小當前入口</h1><p class="lead">品質通過後，讓成果有可追溯的位置。歸檔是把來源、版本、產出與證據連起來。</p><div class="card"><h2>同一個月報，三種處理方式</h2><div class="tabs"><button data-archive="loose" aria-pressed="true">散落檔案</button><button data-archive="trace" aria-pressed="false">建立索引</button><button data-archive="history" aria-pressed="false">保留歷史</button></div><pre class="code-panel" id="archive-text"></pre><p id="archive-result" role="status"></p></div><div class="grid2"><div class="card"><h2>命名讓版本可辨識</h2><p>例如 activities_2026-10.csv、monthly_report_2026-10.svg。命名要固定，並記錄哪份是目前使用版本。</p></div><div class="card"><h2>清理讓入口保持可用</h2><p>暫存放 _scratch/。驗證證據另存正式位置。舊成果移到歸檔位置並更新索引，再依規則清理暫存。</p></div></div><div class="key">歸檔不代表每次讀完整歷史。索引指出目前版本，必要時才回查歷史。歸檔也不等於備份。</div><div class="card"><h2>說明檔（規則建立）</h2><p class="note">示範內容：這些檔案把約定留下來，讓下一輪可以查閱。點開看用途，不必背檔名。</p><details><summary>out/README.md</summary><pre class="code-panel"># 成果與證據
 
 用途：保存完成成果與檢查紀錄。
 記錄來源版本、核對結果及產出日期。
@@ -51,7 +85,7 @@
 品質檢查、備份、Git 初始化尚未執行。
 
 下一步：確認來源與使用限制，再放入獲准教材。
-待確認：學期、正式期限、確認者。</pre></details></div></section><section class="page" data-page="8" hidden aria-labelledby="heading-8"><p class="eyebrow">第 08 步 / Context 與交接</p><h1 id="heading-8" tabindex="-1">Context 管理：按需讀取，保存再接續</h1><p class="lead">現在有清楚位置、可靠資料與最新狀態。助手才能只讀這一步需要的內容，並在長任務中保存交接。</p><div class="grid2"><div class="card"><h2>減少輸入與輸出浪費</h2><p>先讀 README 與 PROGRESS，再讀必要來源。搜尋先限範圍。長工具輸出存檔，對話保留結論、證據路徑與下一步。</p></div><div class="card"><h2>保留可以接續的內容</h2><p>目標、禁止事項、決策、必要路徑與 ID、驗證、未解錯誤及下一步。逐字要求的內容存原檔，摘要只記位置。</p></div></div><div class="card"><h2>互動：此刻該繼續，還是準備交接？</h2><label class="field">目前階段<select id="context-situation"><option value="working">正在分析，仍有足夠空間</option><option value="done">階段完成，下一段需要更多空間</option><option value="running">資料匯入仍在進行</option><option value="unknown">用量未知，已有新決策</option></select></label><p class="output" id="context-advice" role="status"></p></div><div class="key">保存不等於壓縮。Skill 提供規則與提醒，不會改變模型容量或系統壓縮門檻。提醒後繼續已授權工作。</div><p class="note">60% 保存、75% 評估壓縮是可調整的工作建議，不是官方門檻。取不到用量就標示未知。<a href="https://code.claude.com/docs/en/context-window" target="_blank" rel="noopener">查看官方 Context 說明</a>。</p><div class="card"><h2>說明檔（規則）</h2><p class="note">示範內容：這些檔案把約定留下來，讓下一輪可以查閱。點開看用途，不必背檔名。</p><details><summary>CLAUDE.md</summary><pre class="code-panel"># 工作規則
+待確認：學期、正式期限、確認者。</pre></details></div></section><section class="page" data-page="8" hidden aria-labelledby="heading-8"><p class="eyebrow">第 08 步 / Context 與交接</p><h1 id="heading-8" tabindex="-1">Context 管理：按需讀取，保存再接續</h1><p class="lead">現在有清楚位置、可靠資料與最新狀態。助手才能只讀這一步需要的內容，並在長任務中保存交接。</p><div class="grid2"><div class="card"><h2>減少輸入與輸出浪費</h2><p>先讀 README 與 PROGRESS，再讀必要來源。搜尋先限範圍。長工具輸出存檔，對話保留結論、證據路徑與下一步。</p></div><div class="card"><h2>保留可以接續的內容</h2><p>目標、禁止事項、決策、必要路徑與 ID、驗證、未解錯誤及下一步。逐字要求的內容存原檔，摘要只記位置。</p></div></div><div class="card"><h2>互動：此刻該繼續，還是準備交接？</h2><label class="field">目前階段<select id="context-situation"><option value="working">正在分析，仍有足夠空間</option><option value="done">階段完成，下一段需要更多空間</option><option value="running">資料匯入仍在進行</option><option value="unknown">用量未知，已有新決策</option></select></label><p class="output" id="context-advice" role="status"></p></div><div class="key">保存不等於壓縮。Skill 提供規則與提醒，不會改變模型容量或系統壓縮門檻。提醒後繼續已授權工作。</div><p class="note">60% 保存、75% 評估壓縮是可調整的工作建議，不是官方門檻。取不到用量就標示未知。<a href="https://code.claude.com/docs/en/context-window" target="_blank" rel="noopener">查看官方 Context 說明</a>。</p><div class="card"><h2>說明檔(建立規則)</h2><p class="note">示範內容：這些檔案把約定留下來，讓下一輪可以查閱。點開看用途，不必背檔名。</p><details><summary>CLAUDE.md</summary><pre class="code-panel"># 工作規則
 
 保留來源原檔，不自行公開學生資料。
 先讀目的與進度，再讀必要來源。
@@ -137,4 +171,4 @@ document.querySelectorAll('.animated-terminal').forEach(panel=>{
  document.addEventListener('click',e=>{if(e.target.closest('[data-go],#next,#previous')&&running){stop();label();}});
 });
 })();
-</script></body></html>
+</script><script>document.getElementById("download-data-rules").addEventListener("click",()=>download("DATA_RULES.md","# 活動月報資料規則（教學示例）\n\n## 來源與用途\n\n資料是本頁五列模擬活動資料，不是真實活動紀錄。\n來源原檔保留；工作資料另存，實際專案路徑依授權確認。\n\n## 檢查條件\n\n- 活動 ID 不得空白。是否必須唯一，要依資料用途確認。\n- 本例每個活動應有一列；重複 ID 先查原因，不直接刪除。\n- 報名數應為非負整數；文字或異常值先核對來源，不猜值。\n- 核對必要欄位、缺值、單位與日期定義；未執行的檢查不標通過。\n\n## 本例已確認的修正\n\n1. A02 重複列是重送：保留一列，移除工作資料中的重送列。\n2. A04「三十」經示例來源確認為 30：只在工作資料轉為數值。\n3. 核對四個唯一活動，報名次數合計 108。不是去重人數。\n\n以上依據由教材預先設定。真實資料必須重新核對，不能為得到 108 而改資料。\n網頁按鈕只改示範畫面，不會修改電腦上的檔案。\n\n## 修正與檢查證據\n\n記錄來源版本、問題、確認依據、實際動作、受影響筆數、輸出位置及檢查結果。\n保存重跑方法；個資與敏感內容不得寫入公開日誌。\n修正後重跑檢查，仍失敗就記下阻礙，不標為完成。\n\n## 更新與接續\n\n更新 README 的資料與成果索引，PROGRESS 記錄驗證、待辦及下一步。\n下一批資料到來，先確認欄位及規則是否改變，再重新檢查。\n建立規則檔不等於完成資料驗證、歸檔或備份。\n","text/markdown;charset=utf-8"));</script></body></html>
