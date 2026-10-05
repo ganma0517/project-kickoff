@@ -1,0 +1,35 @@
+# 依已確認的資料限制修改下列路徑；不是按副檔名一律排除
+# 預設排除原始／受限資料，公開且獲准納入的檔案可採精確路徑例外
+# 路徑說明保留在版控；公開版說明不得包含私人絕對路徑
+data_raw/*
+!data_raw/README.md
+# 專案另有受限資料路徑時，在此加入精確排除規則
+
+# 機密；.env.example 只允許無真實憑證的設定示例
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# 暫存與系統檔
+_scratch/
+.playwright-mcp/
+.DS_Store
+Thumbs.db
+*.log
+
+# 中間產物（可重建就不用追蹤；要追蹤就把這行刪掉）
+build/
+data_work/
+
+# 統計與程式暫存
+*.smcl
+__pycache__/
+node_modules/
+.ipynb_checkpoints/
+
+# 手動快照與本機資料庫檔，依資料限制調整
+backup/
+*.sqlite
+*.db

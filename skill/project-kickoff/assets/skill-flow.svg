@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 1040 368" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="skill-flow-title skill-flow-desc">
+      <title id="skill-flow-title">project-kickoff 三步驟流程圖</title>
+      <desc id="skill-flow-desc">流程圖顯示 project-kickoff Skill 的三個步驟：詢問類型與資料夾、設定記憶模式、建立資料夾與說明檔；第二步分出記憶模式的三個維度：版本、Context／Session、Token 控制。</desc>
+      <defs><style>@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;500;600&amp;family=Noto+Sans+TC:wght@400;500;600&amp;family=Geist+Mono:wght@400;500;600&amp;display=swap');</style>
+        <marker id="arrow" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#4A4540"/></marker>
+        <marker id="arrow-accent" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#C8441A"/></marker>
+        <marker id="arrow-soft" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#8A8078"/></marker>
+      </defs>
+
+      <rect width="100%" height="100%" fill="#F3EDE2"/>
+
+      <!-- ===== ARROWS (drawn before boxes) ===== -->
+
+      <!-- Step1 -> Step2 -->
+      <line x1="280" y1="72" x2="396" y2="72" stroke="#4A4540" stroke-width="1" marker-end="url(#arrow)"/>
+      <!-- Step2 -> Step3 -->
+      <line x1="640" y1="72" x2="756" y2="72" stroke="#4A4540" stroke-width="1" marker-end="url(#arrow)"/>
+
+      <!-- Self-loop on Step1: 必要資訊不明時補問 -->
+      <path d="M 100 104 L 100 144 L 220 144 L 220 108" fill="none" stroke="#8A8078" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#arrow-soft)"/>
+      <rect x="100" y="124" width="120" height="14" rx="2" fill="#F3EDE2"/>
+      <text x="160" y="134" fill="#8A8078" font-size="10.5" font-family="'Noto Sans TC', sans-serif" text-anchor="middle" letter-spacing="0.02em">必要資訊不明時補問</text>
+
+      <!-- Fan: Step2 -> 記憶模式三維度 -->
+      <line x1="520" y1="104" x2="520" y2="180" stroke="#4A4540" stroke-width="1"/>
+      <line x1="260" y1="180" x2="780" y2="180" stroke="#4A4540" stroke-width="1"/>
+      <line x1="260" y1="180" x2="260" y2="228" stroke="#4A4540" stroke-width="1" marker-end="url(#arrow)"/>
+      <line x1="520" y1="180" x2="520" y2="228" stroke="#4A4540" stroke-width="1" marker-end="url(#arrow)"/>
+      <line x1="780" y1="180" x2="780" y2="228" stroke="#4A4540" stroke-width="1" marker-end="url(#arrow)"/>
+
+      <!-- Section label: 記憶模式 -->
+      <text x="40" y="200" fill="#1A1A1A" font-size="13" font-weight="600" font-family="'Noto Serif TC', serif" text-anchor="start">記憶模式</text>
+      <text x="40" y="216" fill="#8A8078" font-size="10" font-family="'Noto Sans TC', sans-serif" text-anchor="start" letter-spacing="0.04em">三個維度一起決定</text>
+
+      <!-- ===== MAIN FLOW BOXES ===== -->
+
+      <!-- Step 1 -->
+      <rect x="40" y="40" width="240" height="64" rx="4" fill="#FAF6EF" stroke="#D5CEBF" stroke-width="1"/>
+      <text x="60" y="66" fill="#1A1A1A" font-size="15" font-weight="600" font-family="'Noto Serif TC', serif">① 詢問類型與資料夾</text>
+      <text x="60" y="86" fill="#4A4540" font-size="11" font-family="'Noto Sans TC', sans-serif">五組問題</text>
+
+      <!-- Step 2 (focal) -->
+      <rect x="400" y="40" width="240" height="64" rx="4" fill="rgba(200,68,26,0.08)" stroke="#C8441A" stroke-width="1.2"/>
+      <text x="420" y="66" fill="#1A1A1A" font-size="15" font-weight="600" font-family="'Noto Serif TC', serif">② 設定 Context 節約方式</text>
+      <text x="420" y="86" fill="#4A4540" font-size="11" font-family="'Noto Sans TC', sans-serif">決定記憶模式</text>
+
+      <!-- Step 3 -->
+      <rect x="760" y="40" width="240" height="64" rx="4" fill="#FAF6EF" stroke="#D5CEBF" stroke-width="1"/>
+      <text x="780" y="66" fill="#1A1A1A" font-size="15" font-weight="600" font-family="'Noto Serif TC', serif">③ 建立資料夾與說明檔</text>
+      <text x="780" y="86" fill="#4A4540" font-size="10" font-family="'Geist Mono', monospace">CLAUDE.md · PROGRESS.md</text>
+
+      <!-- ===== 記憶模式 三維度 ===== -->
+
+      <!-- A 版本 -->
+      <rect x="160" y="228" width="200" height="96" rx="4" fill="#FAF6EF" stroke="#D5CEBF" stroke-width="1"/>
+      <rect x="160" y="228" width="200" height="3" fill="#C8441A"/>
+      <text x="180" y="256" fill="#1A1A1A" font-size="15" font-weight="600" font-family="'Noto Serif TC', serif">版本</text>
+      <text x="180" y="276" fill="#8A8078" font-size="10" font-family="'Geist Mono', monospace">.git</text>
+      <text x="180" y="296" fill="#4A4540" font-size="11" font-family="'Noto Sans TC', sans-serif">跨 session 長期紀錄</text>
+
+      <!-- B Context/Session -->
+      <rect x="420" y="228" width="200" height="96" rx="4" fill="#FAF6EF" stroke="#D5CEBF" stroke-width="1"/>
+      <rect x="420" y="228" width="200" height="3" fill="#3B6FA0"/>
+      <text x="440" y="256" fill="#1A1A1A" font-size="15" font-weight="600" font-family="'Noto Serif TC', serif">Context／Session</text>
+      <text x="440" y="278" fill="#4A4540" font-size="11" font-family="'Noto Sans TC', sans-serif">單次對話容量</text>
+      <text x="440" y="296" fill="#8A8078" font-size="10" font-family="'Noto Sans TC', sans-serif">60% 準備交接 · 75% 評估壓縮</text>
+
+      <!-- C Token 控制 -->
+      <rect x="680" y="228" width="200" height="96" rx="4" fill="#FAF6EF" stroke="#D5CEBF" stroke-width="1"/>
+      <rect x="680" y="228" width="200" height="3" fill="#2D6A4F"/>
+      <text x="700" y="256" fill="#1A1A1A" font-size="15" font-weight="600" font-family="'Noto Serif TC', serif">Token 控制</text>
+      <text x="700" y="278" fill="#4A4540" font-size="11" font-family="'Noto Sans TC', sans-serif">減少浪費</text>
+      <text x="700" y="296" fill="#8A8078" font-size="10" font-family="'Noto Sans TC', sans-serif">長輸出存檔 · 用助手分工</text>
+
+    </svg>
